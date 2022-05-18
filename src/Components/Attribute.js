@@ -2,9 +2,8 @@ import React from "react"
 
 const Attribute = () => {
     return (
-        <div>
-            <h1>Howdy!</h1>
-            
+        <div className="attribute">
+            <a href="http://marvel.com">Data provided by Marvel. © 2022 MARVEL</a>
         </div>
     )  
      

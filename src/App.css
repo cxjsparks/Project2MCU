@@ -2,18 +2,26 @@
   text-align: center;
 
 }
+
 .nav {
-  font-size: 30px;
+  font-size: 20px;
+  color: black;
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 5vh;
   background-color: rgb(222, 49, 49);
 }
+
 .nav-links {
   width: 40%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style-type: none;
+}
+
+.attribute {
+  text-align: left;
+  margin: 5px;
 }
