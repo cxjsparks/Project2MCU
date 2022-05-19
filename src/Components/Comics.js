@@ -1,6 +1,7 @@
 import React from "react"
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
+import ComicDetails from "./Component/ComicDetails"
 
 // http://gateway.marvel.com/v1/public/comics?ts=1&apikey=30d1009ef6cc717088bed0009f9ee355&hash=37efc00f48c455559cea8f56cf80b20d
 
@@ -15,6 +16,8 @@ function Comics() {
         .then(data => setComicsList(data.data.results))
         .catch(error => console.log("error!"))
     }, [])
+
+    
 
     let comicsMap 
     if (comicsList !== null) {
