@@ -6,7 +6,8 @@ import Attribute from "./Components/Attribute"
 import Comics from "./Components/Comics"
 import Home from "./Components/Home"
 import Navbar from "./Components/Navbar"
-import Thor from "./Components/Thor"
+import Characters from "./Components/Characters"
+import ComicDetails from "./Components/ComicDetails"
 
 
 function App() {
@@ -18,8 +19,9 @@ function App() {
 
       <Routes>
         <Route path="/Home" element={ <Home />} />
-        <Route path="/Thor" element={ <Thor />} />
+        <Route path="/Thor" element={ <Characters />} />
         <Route path="/Comics" element={ <Comics />} />
+        <Route path="/Comics/:id" element={ <ComicDetails />} />
       </Routes>
     </div>
   )

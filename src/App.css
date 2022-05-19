@@ -4,20 +4,20 @@
 
 .nav {
   font-size: 20px;
-  color: black;
+  color: red;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   min-height: 5vh;
-  background-color: rgb(222, 49, 49);
+  background-color: black;
 }
 
 .nav-links {
   font-size: 30px;
   width: 40%;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  /* justify-content: flex-start;
+  align-items: center; */
   list-style-type: none;
   text-decoration: none;
 }
@@ -27,11 +27,17 @@
 }
 
 .attribute {
-  text-align: left;
-  margin: 5px;
+  position: absolute;
+  left:0;
+  bottom: 0;
+  right: 0;
 }
 
-/* .toggle-button {
+.character {
+  list-style-type: none;
+}
+
+.toggle-button {
   position: absolute;
   top: .75rem;
   right: 1rem;
@@ -58,4 +64,4 @@
     display: none;
   }
   
-} */
+}

@@ -4,26 +4,26 @@ import { Link } from "react-router-dom"
 
 // http://gateway.marvel.com/v1/public/comics?ts=1&apikey=30d1009ef6cc717088bed0009f9ee355&hash=37efc00f48c455559cea8f56cf80b20d
 
-function Comics() {
+function Characters() {
     const publicKey = "30d1009ef6cc717088bed0009f9ee355"
     const hash = "37efc00f48c455559cea8f56cf80b20d"
-    const [comicsList, setComicsList] = useState (null)
+    const [character, setCharacter] = useState (null)
 
     useEffect(() =>  {
-        fetch(`http://gateway.marvel.com/v1/public/comics?ts=1&apikey=${publicKey}&hash=${hash}`)
+        fetch(`https://gateway.marvel.com/v1/public/characters?&ts=1&apikey=${publicKey}&hash=${hash}`)
         .then(response => response.json())
-        .then(data => setComicsList(data.data.results))
+        .then(data => setCharacter(data.data.results))
         .catch(error => console.log("error!"))
     }, [])
 
-    let comicsMap 
-    if (comicsList !== null) {
-        comicsMap = comicsList.map((comicsItem) => {
+    let characterMap 
+    if (character !== null) {
+        characterMap = character.map((characterItem) => {
             return (
-                <div className="comics">
+                <div className="character">
                     <ul>
-                        <Link to={`/Comics/${comicsItem.id}`}>
-                        <li>{comicsItem.title}</li>
+                        <Link to={`/Thor/${characterItem.id}`}>
+                        <li>{characterItem.name}</li>
                         </Link>
                     </ul>
                 </div>
@@ -34,11 +34,11 @@ function Comics() {
 
     return (
         <div>
-            <p>{comicsMap}</p>
+            <p>{characterMap}</p>
         </div>
     )
   
 }
 
-export default Comics;
+export default Characters;
 
