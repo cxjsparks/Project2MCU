@@ -13,7 +13,10 @@ function Comics() {
     useEffect(() =>  {
         fetch(`http://gateway.marvel.com/v1/public/comics?ts=1&apikey=${publicKey}&hash=${hash}`)
         .then(response => response.json())
-        .then(data => setComicsList(data.data.results))
+        .then(data => {
+            console.log(data)
+             setComicsList(data.data.results)})
+       
         .catch(error => console.log("error!"))
     }, [])
 
@@ -33,7 +36,7 @@ function Comics() {
             );
         })
     }
-    
+   
 
     return (
         <div>
