@@ -22,7 +22,7 @@ function Characters() {
             return (
                 <div className="character">
                     <ul>
-                        <Link to={`/Thor/${characterItem.id}`}>
+                        <Link to={`/Character/${characterItem.id}`}>
                         <li>{characterItem.name}</li>
                         </Link>
                     </ul>

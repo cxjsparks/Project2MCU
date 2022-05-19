@@ -11,7 +11,7 @@ const Navbar = () => {
             </a>
             <ul className="nav-links">
                 <Link to="/Home"  style={{textDecoration: "none"}}><li>Home</li></Link>
-                <Link to="/Thor"  style={{textDecoration: "none"}}><li>Thor</li></Link>
+                <Link to="/Thor"  style={{textDecoration: "none"}}><li>Characters</li></Link>
                 <Link to="/Comics"  style={{textDecoration: "none"}}><li>Comics</li></Link>
             </ul>
         </nav>
