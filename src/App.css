@@ -28,13 +28,19 @@
 
 .attribute {
   position: absolute;
-  left:0;
   bottom: 0;
+  left: 5;
   right: 0;
 }
 
 .comics li {
   list-style-type: none;
+  font-size: 20px;
+}
+
+.character li {
+  list-style-type: none;
+  font-size: 20px;
 }
 
 .toggle-button {
