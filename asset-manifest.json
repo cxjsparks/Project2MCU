@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Project2MCU/static/css/main.99f60092.css",
+    "main.js": "/Project2MCU/static/js/main.53713659.js",
+    "static/js/787.7f882876.chunk.js": "/Project2MCU/static/js/787.7f882876.chunk.js",
+    "index.html": "/Project2MCU/index.html",
+    "main.99f60092.css.map": "/Project2MCU/static/css/main.99f60092.css.map",
+    "main.53713659.js.map": "/Project2MCU/static/js/main.53713659.js.map",
+    "787.7f882876.chunk.js.map": "/Project2MCU/static/js/787.7f882876.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99f60092.css",
+    "static/js/main.53713659.js"
+  ]
+}
