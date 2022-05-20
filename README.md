@@ -14,13 +14,13 @@ As an MCU fan, I decided to take a look at the artwork from the comics Stan Lee 
 
 ---
 
-# Code Style
+## Code Style
 
 Used react, javascript, html, css, json to create this project.
 
 ---
 
-# Code Example
+## Code Example
 
 ```js
  function Comics () {
@@ -41,13 +41,13 @@ Used react, javascript, html, css, json to create this project.
 
 ---
 
-# API Reference
+## API Reference
 
 https://developer.marvel.com/documentation/getting_started
 
 ---
 
-# Credit
+## Credit
 
 Thanks to @2022Marvel for having APIs, and to the instructors at GA for helping me get so far in this project!
 
