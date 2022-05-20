@@ -5,7 +5,8 @@ import { Link } from "react-router-dom"
 
 // http://gateway.marvel.com/v1/public/comics?ts=1&apikey=30d1009ef6cc717088bed0009f9ee355&hash=37efc00f48c455559cea8f56cf80b20d
 
-function Comics() {
+
+function Comics () {
     const publicKey = "30d1009ef6cc717088bed0009f9ee355"
     const hash = "37efc00f48c455559cea8f56cf80b20d"
     const [comicsList, setComicsList] = useState (null)
