@@ -8,7 +8,7 @@ function Comics () {
     const [comicsList, setComicsList] = useState (null)
 
     useEffect(() =>  {
-        fetch(`http://gateway.marvel.com/v1/public/comics?ts=1&apikey=${publicKey}&hash=${hash}`)
+        fetch(`https://gateway.marvel.com/v1/public/comics?ts=1&apikey=${publicKey}&hash=${hash}`)
         .then(response => response.json())
         .then(data => {
              setComicsList(data.data.results)})
